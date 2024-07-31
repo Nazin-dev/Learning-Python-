@@ -3,7 +3,7 @@ print(type(1))
 print(type(0))
 
 #type é uma classe que retorna o tipo do argumento. 
-print("-------------------------------------------")
+print(20 * "-")
 print()
 #tipo de dado "boolean" no caso bool. 
 
