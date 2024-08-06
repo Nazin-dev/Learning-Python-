@@ -38,7 +38,7 @@ resultado_da_mult = soma_dos_primeiros_digitos * 10
 
 resultado_do_resto = resultado_da_mult % 11
 
-digito1 = 0
+digito1 = 0 
 
 if resultado_do_resto > 9:
   print('Cpf invalido!')
@@ -67,8 +67,15 @@ resto_da_mult_por_dez = (soma_dos_dez_primeiros * 10) % 11
 
 digito2 = 0
 if resto_da_mult_por_dez > 9:
-  print('Cpf invalido!')
+  print('CPF: invalido!')
   
 elif resto_da_mult_por_dez <= 9:
   digito2 = resto_da_mult_por_dez
   print(f'O segundo digito do cpf é [{digito2}].')
+
+validation_two = cpf_formatado_traco[10]
+
+if resto_da_mult_por_dez == int(validation_two):
+  print("CPF: valido!")
+else:
+  print('CPF: Invalido!')
