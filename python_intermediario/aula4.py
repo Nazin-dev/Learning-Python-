@@ -1,10 +1,8 @@
-def paridade(a):
+def par_imp(a):
   if a % 2 == 0:
-    print('Seu numero é par!')
-  else:
-    print('Seu numero é impar!')
-  return
+    return f'{a} é par!'
+  return f'{a} é impar!'
+
 numero = input('Digite um numero: ')
 numero = int(numero)
-
-paridade(numero)
+print(par_imp(numero))
