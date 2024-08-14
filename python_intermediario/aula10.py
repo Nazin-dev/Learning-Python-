@@ -34,7 +34,9 @@ while True:
   for op in perguntas[roleta]['Opções']:
     print(f'{cont}) {op}')
     cont += 1
+    
   opcao_escolhida = input('Escolha uma opção: ')
+  
   try:
     opcao_escolhida =  int(opcao_escolhida)
   except ValueError:
